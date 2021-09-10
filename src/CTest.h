@@ -36,7 +36,7 @@ char	ErrMsg[128];
 	
 /** 
  * Simple wrapper to standardized functions marked for testing.
- * @param Name The desirec name for the test function.
+ * @param Name The desired name for the test function.
  */
 #define TEST_DECLARE(Name)	\
 	int32_t	UNIT_##Name()	\
