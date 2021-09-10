@@ -27,7 +27,7 @@ TEST_DECLARE(testA)
 // This will always pass...
 TEST_DECLARE(testB)
 {
-	TEST_ASSERT(sizeof(short) == 2);
+	TEST_ASSERT(sizeof(short) != 2);
 	return (1);
 }
 
