@@ -28,7 +28,7 @@ char	ErrMsg[128];
  * @param Condition If true, will cause the test to fail.
  */
 #define TEST_ASSERT(Condition) 									\
-	if (!Condition)												\
+	if (Condition)												\
 	{															\
 		sprintf(ErrMsg, "Fail Reason: \"%s\"\n", #Condition);	\
 		return (0);												\
@@ -36,7 +36,7 @@ char	ErrMsg[128];
 	
 /** 
  * Simple wrapper to standardized functions marked for testing.
- * @param Name The desirec name for the test function.
+ * @param Name The desired name for the test function.
  */
 #define TEST_DECLARE(Name)	\
 	static int32_t	UNIT_##Name()	\
