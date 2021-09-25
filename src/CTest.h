@@ -39,7 +39,7 @@ char	ErrMsg[128];
  * @param Name The desirec name for the test function.
  */
 #define TEST_DECLARE(Name)	\
-	int32_t	UNIT_##Name()	\
+	static int32_t	UNIT_##Name()	\
 
 /** 
  * Runs a given Unit test.
