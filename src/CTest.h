@@ -53,7 +53,7 @@ char	ErrMsg[128];
 ////////////////////////////////////////////////////////////////////////////////////
 
 // Internal test function, use TEST_RUN macro to invoke this!
-void Internal_Test(const char const* Name, int32_t(*T)(void), int32_t ExitAtFail)
+void Internal_Test(const char* Name, int32_t(*T)(void), int32_t ExitAtFail)
 {	
 	int32_t Result = T();
 
